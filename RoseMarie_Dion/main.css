@@ -1,7 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap');
 
 h2{
-  text-align: center;
+  text-align: left;
 }
 h3{
-  text-align: center;
+  text-align: left;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: rgb(246, 207, 192);
+  display: flex;
+  align-items: center;
+  font-family: 'Overpass Mono', monospace;
+}
+
+#head {
+  position: absolute;
+  top: 250px;
+  margin-right: 200px;
+  right: 0;
+  line-height: 20px;
+  align-items: left;
+}
+
+#menu {
+  position: absolute;
+  width: 200px;
+  height: 800px;
+  right: 0;
+}
+
+.dropdown {
+  position: absolute;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+#lineBlob {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  width: 50vmax;
+}
+
+#heart {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  width: 50vmax;
+}
+
+#blob {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  fill: #023F92;
+  width: 50vmax;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 2) translate(80vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 2) translate(80vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(0.7, 1) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(0.7, 1) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
 }
