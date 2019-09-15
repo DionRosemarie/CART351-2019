@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Set Interval Ex</title>
+  <link rel="stylesheet" type="text/css" href="sheet.css">
+</head>
+
+<body>
+  <script>
+    window.onload = function() {
+      let handleClick = function(event) {
+        // do something!
+      console.log("target:" + event.target.id);
+      };
+      let cBox = document.getElementById('c');
+      cBox.addEventListener('click', handleClick);
+
+      let aBox = document.getElementById('a');
+      aBox.addEventListener('click', handleClick);
+
+      let bBox = document.getElementById('b');
+      bBox.addEventListener('click', handleClick);
+    }
+
+  </script>
+  <div id="rowOfBoxes">
+    <div id="a" class="box"></div>
+    <div id="b" class="box"></div>
+    <div id="c" class="box"></div>
+  </div>
+</body>
+
+</html>
