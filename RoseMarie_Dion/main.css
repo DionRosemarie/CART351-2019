@@ -7,7 +7,24 @@ h3{
   text-align: left;
 }
 
-p{
+p {
+  text-align: left;
+  font-size: 15px;
+}
+
+a:hover {
+  font-style: italic;
+
+}
+
+a:link {
+  color: black;
+  text-align: left;
+  font-size: 15px;
+}
+
+a:visited {
+  color: black;
   text-align: left;
   font-size: 15px;
 }
@@ -49,6 +66,7 @@ body {
 
 .dropdownContentProject {
   display: none;
+  padding-top: 10px;
   position: absolute;
   min-width: 120px;
   z-index: 1;
@@ -66,18 +84,12 @@ body {
   display: none;
   position: absolute;
   min-width: 120px;
+  padding-top: 10px;
   z-index: 1;
 }
 
 .dropdown:hover .dropdownContent {
   display: block;
-}
-
-.dropdownContent:hover {
-font-style: italic;
-}
-.dropdownContentProject:hover {
-font-style: italic;
 }
 
 
