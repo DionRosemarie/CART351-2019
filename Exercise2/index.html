@@ -1,33 +1,64 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Set Interval Ex</title>
-  <link rel="stylesheet" type="text/css" href="sheet.css">
-</head>
+  <title> EXERCISE 2 </title>
+  <style>
+  #c {
+      background-color: #3e181b;
+      border: 3px solid #db1d2d;}
 
-<body>
+  #d {
+      background-color: #422018;
+      border: 3px solid #f0421c;}
+
+  #e {
+      background-color: #45391b;
+      border: 3px solid #fec02d;}
+
+  body{
+      background:black;}
+      .para {color:white;font-size:22pt; background:purple;margin-left: 1%;margin-top: 1%; padding:1%;}
+      .box {
+      width: 10vw; /*(1/10th) viewport width */
+      height: 10vw;
+      margin-left: 1%;
+      margin-top: 1%;
+      display:inline-block;
+    }
+  .wrapper{
+    margin-left:30%;
+    margin-top:15%;
+  }
+  </style>
   <script>
     window.onload = function() {
       let handleClick = function(event) {
         // do something!
       console.log("target:" + event.target.id);
       };
+
       let cBox = document.getElementById('c');
       cBox.addEventListener('click', handleClick);
 
-      let aBox = document.getElementById('a');
+      let aBox = document.getElementById('d');
       aBox.addEventListener('click', handleClick);
 
-      let bBox = document.getElementById('b');
+      let bBox = document.getElementById('e');
       bBox.addEventListener('click', handleClick);
     }
+//on load
+
 
   </script>
-  <div id="rowOfBoxes">
-    <div id="a" class="box"></div>
-    <div id="b" class="box"></div>
-    <div id="c" class="box"></div>
-  </div>
-</body>
+</head>
+<body>
+  <div class = "wrapper">
+  <div id = "c" class = "box"></div>
+  <div id = "d" class = "box"></div>
+  <div id = "e" class = "box"></div>
+  <br />
+  <p style = "display:none;" id = "displayText" class = "para"></p>
+</div>
 
+</body>
 </html>
