@@ -35,18 +35,21 @@
       let handleClick = function(event) {
         // do something!
       console.log("target:" + event.target.id);
+
       };
 
       let cBox = document.getElementById('c');
       cBox.addEventListener('click', handleClick);
 
+
       let aBox = document.getElementById('d');
       aBox.addEventListener('click', handleClick);
 
+
       let bBox = document.getElementById('e');
       bBox.addEventListener('click', handleClick);
+
     }
-//on load
 
 
   </script>
@@ -56,8 +59,10 @@
   <div id = "c" class = "box"></div>
   <div id = "d" class = "box"></div>
   <div id = "e" class = "box"></div>
-  <br />
-  <p style = "display:none;" id = "displayText" class = "para"></p>
+  <br/>
+  <p style = "display:inline-block;" id = "displayText" class = "para">
+  hello world
+  </p>
 </div>
 
 </body>

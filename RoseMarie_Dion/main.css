@@ -14,7 +14,6 @@ p {
 
 a:hover {
   font-style: italic;
-
 }
 
 a:link {
@@ -54,14 +53,14 @@ body {
 
 #menu {
   position: absolute;
-  width: 200px;
+  width: 320px;
   height: 800px;
   right: 0;
 }
 
 .dropdownProject {
   position: absolute;
-  left:150px;
+  left:160px;
 }
 
 .dropdownContentProject {
@@ -92,18 +91,39 @@ body {
   display: block;
 }
 
+.portfolio {
+  position: absolute;
+  left: 320px;
+}
+
+.dropdownPortfolio {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.portfolio:hover .dropdownPortfolio{
+  display: block;
+}
+
+
+
+
+
 
 
 #lineBlob {
   position: absolute;
   top: 50px;
-  left: 100px;
+  left: 150px;
 }
 
 #heart {
   position: absolute;
-  top: 120px;
-  left: 200px;
+  top: 90px;
+  left: 230px;
 }
 
 #blob {
