@@ -29,12 +29,15 @@
     margin-left:30%;
     margin-top:15%;
   }
+
   </style>
+
   <script>
     window.onload = function() {
       let handleClick = function(event) {
         // do something!
       console.log("target:" + event.target.id);
+      document.getElementById("displayText").innerHTML = 'This is box ' + event.target.id + " !";
 
       };
 
@@ -54,6 +57,7 @@
 
   </script>
 </head>
+
 <body>
   <div class = "wrapper">
   <div id = "c" class = "box"></div>
@@ -61,7 +65,7 @@
   <div id = "e" class = "box"></div>
   <br/>
   <p style = "display:inline-block;" id = "displayText" class = "para">
-  hello world
+  Click on a box to discover their name!
   </p>
 </div>
 
