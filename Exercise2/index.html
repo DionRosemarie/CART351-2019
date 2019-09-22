@@ -34,12 +34,23 @@
 
   <script>
     window.onload = function() {
-      let handleClick = function(event) {
+    let handleClick = function(event) {
         // do something!
       console.log("target:" + event.target.id);
       document.getElementById("displayText").innerHTML = 'This is box ' + event.target.id + " !";
-
+      document.addEventListener("mouseout",function(event){
+      console.log('mouseout');
+      clear();
+      });
       };
+
+      function clear() {
+      setTimeout(5000);
+      console.log('clear');
+      document.getElementById("displayText").innerHTML ="Click on a box to discover their name!";
+}
+
+
 
       let cBox = document.getElementById('c');
       cBox.addEventListener('click', handleClick);
