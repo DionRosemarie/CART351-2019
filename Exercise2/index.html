@@ -39,6 +39,7 @@
       document.getElementById("displayText").innerHTML = 'This is box ' + event.target.id + " !";
       console.log('display');
       document.addEventListener('click', clear);
+
       };
 
       let clear = function(event) {
@@ -57,6 +58,8 @@
 
       let bBox = document.getElementById('e');
       bBox.addEventListener('click', handleClick);
+
+      document.addEventListener('mouseover', mouseOver);
 
     }
 
