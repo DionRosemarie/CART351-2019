@@ -24,26 +24,13 @@ function FreeShapeObject(x, y, w, h, r, g, b, a, contextC, canvasAniC, speedX, s
   this.vy = 10;
 
   this.display = function(){
-    //lets draw something
   this.col = "rgba("+this.r+","+this.g+","+this.b+","+this.a+")";
   this.context.fillStyle = this.col;
-  // save current state
   this.context.save();
-  // translate the origin to the x and y positions....
   this.context.translate(this.x,this.y);
-
-  // rotate the canvas -> but around the center of the rect
   this.context.rotate(this.theta);
-  //increment theta
   this.theta+=0.02;
-  // the coordinates are now relative to the new origin
-  // please note: rects draw from corner so we want to shift it
-  //up and left so that x,y is in its center
   this.context.fillRect(-this.w/2,-this.h/2,this.w,this.h);
-  //do same for inner
-
-
-  //restore state
   this.context.restore();
 
 
@@ -60,10 +47,8 @@ this.update = function(){
     this.speedY*=-1;
   }
 
-  //change by speed ...
   this.x+=this.speedX;
   this.y+=this.speedY;
-  //need to update the inner vars here ....
   this.innerX = this.x+this.innerW/2;
   this.innerY = this.y+this.innerH/2;
 }
