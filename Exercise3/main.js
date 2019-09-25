@@ -45,7 +45,7 @@ canvasAniC.addEventListener('mouseout',mouseouthandler);
 let rectList = [];// variable to hold your list of rectangles
 const NUM_RECTS = 10;
 for(let i=0; i< NUM_RECTS; i++){
-rectList.push(new RectShapeObject((i*55),canvasAniA.height/2,50,50,144,0,0,1.0,contextA,canvasAniA,5,1));
+rectList.push(new RectShapeObject((i*55),canvasAniB.height/2,50,50,144,0,0,1.0,contextA,canvasAniA,5,1));
 console.log(rectList);
 }
 
@@ -53,7 +53,7 @@ console.log(rectList);
 let ellipsesList = [];// variable to hold your list of rectangles
 const NUM_ELLIPSE = 10;
 for(let i=0; i< NUM_ELLIPSE; i++){
-ellipsesList.push(new EllipseShapeObject((i*55),canvasAniB.height/2,50,50,144,0,0,1.0,contextB,canvasAniB,5,5));
+ellipsesList.push(new EllipseShapeObject((i*55),canvasAniB.height/2,100,100,144,0,0,1.0,contextB,canvasAniB,5,5));
 
 }
 
@@ -61,7 +61,7 @@ ellipsesList.push(new EllipseShapeObject((i*55),canvasAniB.height/2,50,50,144,0,
 let freeShapeList = [];// variable to hold your list of rectangles
 const NUM_FREESHAPE = 10;
 for(let i=0; i< NUM_FREESHAPE; i++){
-freeShapeList.push(new FreeShapeObject((i*55),canvasAniC.height/2,50,255,255,255,0,1.0,contextC,canvasAniC,1,1));
+freeShapeList.push(new FreeShapeObject((i*55),canvasAniC.height/2,40,90,255,255,0,1.0,contextC,canvasAniC,3,3));
 }
 
 

@@ -16,13 +16,9 @@ function FreeShapeObject(x, y, w, h, r, g, b, a, contextC, canvasAniC, speedX, s
   this.g =g;
   this.b=b;
   this.a=a;
-  this.innerW = this.w/2;
-  this.innerH = this.h/2;
   //add in when we update
   this.speedX = speedX;
   this.speedY = speedY;
-  this.innerX = this.x+this.innerW/2;
-  this.innerY = this.y+this.innerH/2;
   this.tx=0;
   this.vx = 10;
   this.vy = 10;
@@ -45,7 +41,6 @@ function FreeShapeObject(x, y, w, h, r, g, b, a, contextC, canvasAniC, speedX, s
   //up and left so that x,y is in its center
   this.context.fillRect(-this.w/2,-this.h/2,this.w,this.h);
   //do same for inner
-  this.context.clearRect(-this.w/2+this.innerW/2,-this.w/2+this.innerW/2,this.innerW,this.innerH);
 
 
   //restore state

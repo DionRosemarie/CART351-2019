@@ -14,9 +14,9 @@ function EllipseShapeObject(x, y, w, h, r, g, b, a, contextB, canvasAniB, speedX
   this.b = b;
   this.g = g;
   this.a = a;
-  this.xPos = this.canvas.width/2;
-  this.yPos = this.canvas.height/2;
-  this.radius  = 5;
+  this.xPos = 2;
+  this.yPos = 2;
+  this.radius  = 50;
   this.startAngle = 0;
   this.endAngle = Math.PI * 2
 
@@ -33,7 +33,7 @@ function EllipseShapeObject(x, y, w, h, r, g, b, a, contextB, canvasAniB, speedX
       this.context.fillStyle = this.col;
       this.context.strokeStyle = this.strokeCol;
       this.context.lineWidth = 1;
-      this.context.arc(this.x,this.y,this.r,0,2*Math.PI,true);
+      this.context.arc(this.x,this.y,this.radius,0,2*Math.PI,true);
       this.context.fill();
       this.context.stroke();
       this.context.closePath();
