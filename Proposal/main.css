@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+
+body {
+  background-color: black;
+  padding: 0;
+  font-family:'Share Tech Mono', monospace;
+}
+
+head {
+    background-color: black;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer {
+  padding: 0;
+  color: grey;
+  margin-top: 50px;
+
+}
+
+/* ALL THE ELEMENTS FOR THE NAVIGATION BETWEEN THE PAGES */
+
+nav {
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+a:link {
+    display : inline-block;
+    background-color: black;
+    color : white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+/* INFORMATIONS FOR THE NAVIGATIONS IN THE READING SECTION*/
+
+ul {
+    display: : block;
+    position: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    word-spacing: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+
+}
+
+li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* INFORMATIONS FOR THE TEXT*/
+
+h1 {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    line-height: 35px;
+
+}
+
+article {
+  width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#titleDes {
+  margin-top: 100px;
+  margin-left: 250px;
+  width: 400px;
+  height: 80px;
+}
+
+#para {
+  margin-left: 250px;
+  width: 650px;
+}
+
+#navSec {
+position: absolute;
+text-align: right;
+display: block;
+width: 100px;
+margin-left: 100px;
+line-height: 25px;
+padding: 0;
+height: 50px;
+}
