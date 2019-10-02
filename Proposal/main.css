@@ -112,6 +112,13 @@ article {
   height: 80px;
 }
 
+#titleSketch {
+  margin-top: 50px;
+  margin-left: 250px;
+  width: 400px;
+  height: 80px;
+}
+
 #titleHome {
   margin-top: 150px;
   margin-left: auto;
@@ -143,4 +150,11 @@ margin-top: 100px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
+}
+
+#imgSketch {
+  margin-top: 50px;
+  margin-left: 250px;
+  width: 400px;
+  height: 80px;
 }
