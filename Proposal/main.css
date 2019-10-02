@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
-
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: black;
   padding: 0;
@@ -115,7 +117,7 @@ article {
 #titleSketch {
   margin-top: 50px;
   margin-left: 250px;
-  width: 400px;
+  width: 450px;
   height: 80px;
 }
 
@@ -157,4 +159,29 @@ text-align: center;
   margin-left: 250px;
   width: 400px;
   height: 80px;
+}
+
+.column {
+  margin-top: 50px;
+  flex: 20%;
+}
+
+/* Clearfix (clear floats) */
+.row{
+display: flex;
+width: 800px;
+margin-left: 250px;
+}
+
+.column1 {
+  margin-top: 15px;
+  flex: 20%;
+  margin-bottom: 50px;
+}
+
+/* Clearfix (clear floats) */
+.row1 {
+display: flex;
+width: 800px;
+margin-left: 250px;
 }
