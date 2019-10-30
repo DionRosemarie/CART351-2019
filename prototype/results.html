@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/results.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+
+
+
+  <div id="titleResult">
+  <h1> Discover your community!</h1>
+  <div id="classification">
+    <button class="butt" id="age" type="submit">
+      <h3>AGE<h3>
+    </button>
+    <button class="butt" id="status" type="submit">
+      <h3>STATUS<h3>
+    </button>
+    <button class="butt" id="survey" type="submit">
+      <h3>SURVEY<h3>
+    </button>
+    </div>
+  </div>
+</head>
+
+<body>
+
+  <div id="stat1">
+
+    <div class="tag" id="susan">
+      <h3>Susan Leen</h3>
+      <p>45 years old <br> Engineer at TechCo</p>
+    </div>
+
+    <div class="tag" id="helene">
+      <h3>Catherine Milly</h3>
+      <p>25 years old <br> Junior Engineer</p>
+    </div>
+
+    <div class="tag" id="erika">
+      <h3>Erika Burt</h3>
+      <p>23 years old <br> Junior Engineer</p>
+    </div>
+
+    <div class="tag" id="melanie">
+      <h3>Melanie John</h3>
+      <p>25 years old <br> Engineer at Monacle</p>
+    </div>
+  </div>
+
+  <div id="age1">
+
+    <div class="tag" id="allie">
+      <h3>Allie Paxton</h3>
+      <p>20 years old <br> Intern at TechCo</p>
+    </div>
+
+    <div class="tag" id="alice">
+      <h3>Alice Brown</h3>
+      <p>17 years old <br> Student</p>
+    </div>
+
+    <div class="tag" id="emily">
+      <h3>Emily Carter</h3>
+      <p>21 years old <br> Student</p>
+    </div>
+
+    <div class="tag" id="julie">
+      <h3>Julie Adams</h3>
+      <p>22 years old <br> Intern at Monacle</p>
+    </div>
+  </div>
+
+  <div id="surv">
+
+    <div class="tag" id="monica">
+      <h3>Monica Joel</h3>
+      <p>35 years old <br> Enginner at CTQ</p>
+    </div>
+
+    <div class="options">
+    <div class="opt"id="profil"><h3> Profil </h3></div>
+    <div class="opt"id="msg"><h3> Contact </h3></div>
+    </div>
+
+    <div class="tag" id="amelia">
+      <h3>Amelia Berth</h3>
+      <p>19 years old <br> Student</p>
+    </div>
+
+    <div class="tag" id="alexa">
+      <h3>Alexa Kyle</h3>
+      <p>30 years old <br> Senior Engineer </p>
+    </div>
+
+    <div class="tag" id="malika">
+      <h3>Malika Bulk</h3>
+      <p>28 years old <br>Engineer at Parch</p>
+    </div>
+  </div>
+
+  <div class="tag" id="you">
+    <h3>Rose-Marie</h3>
+    <p>21 years old <br> Student </p>
+  </div>
+
+  <div id="nav">
+      <a href='index.html'><span><h3>HOME</h3><span></a>
+      <a href='about.html'><span><h3>ACCOUNT</h3></span></a>
+      <a href='account.html'><span><h3>BOARD</h3></span></a>
+  </div>
+</body>
+<script>
+  $(document).ready(function() {
+      $('#stat1').hide();
+      $('#age1').hide();
+      $('#surv').hide();
+      $('.opt').hide();
+
+    $("#status").click(function() {
+      console.log("clicked");
+      $('#stat1').show();
+      $('#age1').hide();
+      $('#surv').hide();
+    });
+    $("#age").click(function() {
+      console.log("clicked");
+      $('#age1').show();
+      $('#stat1').hide();
+      $('#surv').hide();
+    });
+    $("#survey").click(function() {
+      console.log("survey");
+      $('#surv').show();
+      $('#stat1').hide();
+      $('#age1').hide();
+    });
+
+    $("#monica").click(function() {
+    console.log("opt");
+    $('.opt').show();
+    });
+
+  });
+</script>
+
+</html>

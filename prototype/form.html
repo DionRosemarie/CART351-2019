@@ -1,0 +1,155 @@
+<html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="css/form.css">
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<script src="nav.js"></script>
+
+<head>
+  <div id="titleForm">
+  <h1> Informations about yourself</h1>
+  </div>
+</head>
+
+<div class="firstForm">
+<div id="title"><h2>Tell us more<br>about you</h2></div>
+
+<div id="name">
+<label id="label" for="fname"><p>Your name</p></label>
+<input type="text" id="fname" name="firstname" placeholder="What's your name">
+</div>
+
+<div id="age">
+<label id="label" for="fage"><p>Your age</p></label>
+<input type="text" id="fage" name="firstname" placeholder="How old are you?">
+</div>
+
+<div id="occupation">
+<label id="label" for="focc"><p>What is your occupation</p></label>
+<input type="text" id="focc" name="firstname" placeholder="What field of tech are you interested in?">
+</div>
+
+<div id="domain">
+<label id="label" for="fdomain"><p>Your domain in tech</p></label>
+<input type="text" id="fdomain" name="firstname" placeholder="What field of tech are you interested in?">
+</div>
+<button class="buttOne"type="submit"><h3>NEXT<h3></button>
+</div>
+
+<div class="secondForm">
+<div id="title"><h2>Tell us more<br>about tech</h2></div>
+
+<div id="list">
+<div id="checkBox">
+<input type="radio" name="radio"><span class="checkmark"></span>
+</div>
+<div id="checkBox">
+<input type="radio" name="radio"><span class="checkmark"></span>
+</div>
+
+<div id="checkBox">
+<input type="radio" name="radio"><span class="checkmark"></span>
+</div>
+
+<div id="checkBox">
+ <input type="radio" name="radio"><span class="checkmark"></span>
+</div>
+
+<div id="checkBox">
+ <input type="radio" name="radio"><span class="checkmark"></span>
+</div>
+
+<div id="checkBox">
+ <input type="radio" name="radio"><span class="checkmark"></span>
+</div>
+
+</div>
+
+<div id="questions">
+<div id="qOne"><p>Tech should be more involve in<br> the discussion with girls</p></div>
+<div id="qTwo"><p>There is more job in Tech then only<br> engineer and developper</p></div>
+<div id="qThree"><p>There should be more feminin representation<br> in tech to encourage young girls</p></div>
+<div id="qFour"><p>There should be tech class base in <br>high school just like art and music ones</p></div>
+<div id="qFive"><p>Interests in tech is the starting point of a career</p></div>
+<div id="qSix"><p>Tech is not only machine and website, it is also the evolution of the idea of interactivity</p></div>
+</div>
+
+<button class="buttTwo"type="submit"><h3>NEXT<h3></button>
+</div>
+
+<div class="thirdForm">
+<div id="title"><h2>Tell us more<br>about tech</h2></div>
+  <div class="slidecontainer">
+    <p> Tech should be more equal</p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <div class="slidecontainer">
+    <p>There should be more advertising for jobs</p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <div class="slidecontainer">
+    <p> The stigma around tech needs to stop</p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <div class="slidecontainer">
+    <p> Tech should be more inclusive</p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <div class="slidecontainer">
+    <p> There should be more interaction with young girls</p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <form class="form"method="get" action="/results.html">
+  <button class="buttThree"><h3>DONE<h3></button>
+  </form>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".buttOne").click(function(){
+    $(".firstForm").css({
+    "z-index":"1"
+    });
+
+    $(".secondForm").css({
+    "z-index":"3"
+    });
+
+    $(".thirdForm").css({
+    "z-index":"2"
+    });
+
+  });
+
+  $(".buttTwo").click(function(){
+    $(".firstForm").css({
+    "z-index":"1"
+    });
+
+    $(".secondForm").css({
+    "z-index":"2"
+    });
+
+    $(".thirdForm").css({
+    "z-index":"3"
+    });
+
+  });
+});
+</script>
+
+<body>
+  <div id="nav">
+    <a href='index.html'><span><h3>HOME</h3><span></a>
+    <a href='about.html'><span><h3>ACCOUNT</h3></span></a>
+    <a href='account.html'><span><h3>BOARD</h3></span></a>
+  </div>
+</body>
+
+</html>

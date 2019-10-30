@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Archivo:700&display=swap');
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  background: wheat;
+  width: auto;
+  height: auto;
+}
+
+h2{
+  font-family: 'Archivo Black', sans-serif;
+  color: rgb(217, 51, 76);
+}
+
+h3{
+  font-family: 'Archivo Black', sans-serif;
+}
+
+p{
+  font-size: 25px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+}
+
+#title {
+  display: block;
+  position: absolute;
+  float: left;
+  left:22%;
+  width: 63.5%;
+  height: 70%;
+  font-size: 60px;
+  margin-top: -2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(217, 51, 76);
+  background-color: wheat;
+}
+
+#til {
+  padding-left: 100px;
+}
+
+#sousTitle{
+  display: block;
+  position: absolute;
+  float: left;
+  left:80%;
+  width: 26%;
+  height: 87.5%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(217, 51, 76);
+  -webkit-text-stroke: 0.5px rgb(217, 51, 76);
+  color:wheat;
+  font-size: 40px;
+  padding-left: 100px;
+  padding-top: -10px;
+  background-color: wheat;
+  z-index: 6;
+}
+
+.button{
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+  color: wheat;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 100px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  -webkit-text-stroke: 1px rgb(217, 51, 76);
+  border-width: 2px;
+  border-color: rgb(217, 51, 76);
+}
+
+.button:hover{
+  background-color: wheat;
+  background: repeating-linear-gradient(
+    -55deg,wheat,wheat 3px,#d9334c 3px,#d9334c 5px);
+    color: rgb(217, 51, 76);
+  -webkit-text-stroke: 0px;
+  /*transform: translate(3em,0);*/
+}
+
+.form {
+  display: block;
+  position: absolute;
+  float: left;
+  left:22%;
+  width: 63.5%;
+  height: 20%;
+  top:83%;
+  border-width: 2px;
+  border-color: rgb(217, 51, 76);
+}
+
+#divNav{
+  position: relative;
+  display: block;
+  float: left;
+  padding-top: 45px;
+  padding-left: 45px;
+  width: 20%;
+  height: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(217, 51, 76);
+  letter-spacing: 5px;
+  font-size: 30px;
+  background-color: wheat;
+  z-index: 3;
+}
+#nav{
+width: 250px;
+}
+
+
+#imgHeader{
+  position: relative;
+  margin-left: 215px;
+  width: 100%;
+  height: 200px;
+  padding-left: 50px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(217, 51, 76);
+/* polka dots pattern to be changed*/
+  background-image:
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0),
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+}

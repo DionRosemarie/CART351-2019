@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Archivo:700&display=swap');
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  background-color: wheat;
+  width: auto;
+  height: auto;
+  background-image:
+  radial-gradient( rgb(222, 172, 156) 20%, transparent 0),
+  radial-gradient( rgb(222, 172, 156) 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+}
+
+
+h2{
+  font-family: 'Archivo Black', sans-serif;
+}
+
+h3{
+  font-family: 'Archivo Black', sans-serif;
+}
+
+p{
+  font-family:  'Archivo', sans-serif;
+
+}
+#titleForm {
+  display: inline-block;
+  position: absolute;
+  left:50%;
+  margin-left: -400px;
+  margin-top: 60px;
+  width:100%;
+  height: 100px;
+  border-color: rgb(217, 51, 76);
+  -webkit-text-stroke: 0px rgb(217, 51, 76);
+  color:rgb(217, 51, 76);
+  font-size: 30px;
+}
+.firstForm {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin-left:-200px;
+  left:50%;
+  top: 240px;
+  background-color: wheat;
+  border: solid 2px rgb(217, 51, 76);
+  z-index: 3;
+}
+
+.secondForm {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin-left:-220px;
+  left:50%;
+  top: 260px;
+  background-color: wheat;
+  border: solid 2px rgb(217, 51, 76);
+  z-index: 2;
+}
+
+.thirdForm {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin-left:-240px;
+  left:50%;
+  top: 280px;
+  background-color: wheat;
+  border: solid 2px rgb(217, 51, 76);
+  z-index: 1;
+}
+
+input {
+  background-color: wheat;
+  padding-bottom: 5px;
+}
+
+#title{
+  padding-left:35px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: white;
+  -webkit-text-stroke: 0.5px rgb(217, 51, 76);
+}
+
+#name {
+  width:420px;
+  margin-left: 35px;
+
+}
+
+#fname {
+  border: wheat;
+  border-bottom: solid 2px rgb(217, 51, 76);
+  color:rgb(217, 51, 76);
+  font-family:  'Archivo', sans-serif;
+  width: 100%;
+}
+
+#label{
+  color:rgb(217, 51, 76);
+
+}
+
+#age {
+  width:420px;
+  margin-left: 35px;
+
+}
+
+#fage {
+  border: wheat;
+  border-bottom: solid 2px rgb(217, 51, 76);
+  color:rgb(217, 51, 76);
+  font-family:  'Archivo', sans-serif;
+  width: 100%;
+}
+
+#domain {
+  width:420px;
+  margin-left: 35px;
+}
+
+
+#fdomain {
+  border: wheat;
+  border-bottom: solid 2px rgb(217, 51, 76);
+  color:rgb(217, 51, 76);
+  font-family:  'Archivo', sans-serif;
+  width: 100%;
+}
+
+#occupation {
+  width:420px;
+  margin-left: 35px;
+}
+
+
+#focc {
+  border: wheat;
+  border-bottom: solid 2px rgb(217, 51, 76);
+  color:rgb(217, 51, 76);
+  font-family:  'Archivo', sans-serif;
+  width: 100%;
+}
+
+.buttOne{
+  float: right;
+  height: 40px;
+  width: 80px;
+  margin-right: 45px;
+  margin-top: 25px;
+  border: solid 2px rgb(217, 51, 76);
+  height: 40px;
+  color:rgb(217, 51, 76);
+  background-color: wheat;
+  line-height: 5px;
+}
+
+.buttOne:hover{
+background-color: wheat;
+background-image:
+radial-gradient( rgb(217, 51, 76) 20%, transparent 0),
+radial-gradient( rgb(217, 51, 76) 20%, transparent 0);
+background-size: 10px 10px;
+background-position: 0 0, 15px 15px;
+}
+
+.buttTwo{
+  float: right;
+  height: 40px;
+  width: 80px;
+  margin-top:290px;
+  margin-right: 32px;
+  border: solid 2px rgb(217, 51, 76);
+  height: 40px;
+  color:rgb(217, 51, 76);
+  background-color: wheat;
+  line-height: 5px;
+}
+
+  .buttTwo:hover{
+  background-color: wheat;
+  background-image:
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0),
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+}
+
+.buttThree{
+  float: right;
+  height: 40px;
+  width: 80px;
+  margin-top:20px;
+  margin-right:35px;
+  border: solid 2px rgb(217, 51, 76);
+  height: 40px;
+  color:rgb(217, 51, 76);
+  line-height: 5px;
+  background-color: wheat;
+}
+
+  .buttThree:hover{
+  background-color: wheat;
+  background-image:
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0),
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+}
+
+#list{
+  position: relative;
+  display: block;
+  float: left;
+  padding-left:35px;
+  width: 20px;
+}
+
+#checkBox{
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#checkBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: solid 2px rgb(217, 51, 76);
+}
+
+/* On mouse-over, add a grey background color */
+#checkBox:hover input ~ .checkmark {
+  background-image:
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0),
+  radial-gradient( rgb(217, 51, 76) 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* When the radio button is checked, add a blue background */
+#checkBox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+#checkBox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+#checkBox .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+#questions{
+  position: absolute;
+  float: left;
+  margin-left: 100px;
+  margin-top:-15px;
+  width: 320px;
+  height: 200px;
+  color: rgb(217, 51, 76);
+  font-size: 13px;
+}
+
+#qOne{
+ margin-bottom: 22px;
+}
+
+#qTwo{
+ margin-bottom: 22px;
+}
+
+#qThree{
+ margin-bottom: 22px;
+}
+
+#qFour{
+ margin-bottom: 25px;
+}
+
+#qFive{
+ margin-bottom: 22px;
+}
+
+.slidecontainer{
+  color: rgb(217, 51, 76);
+  margin-left: 35px;
+  line-height: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.5px;
+  border-top: solid 2px rgb(217, 51, 76);
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: solid 2px rgb(217, 51, 76);
+  background: white;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#myRange{
+  width: 425px;
+}
+
+#nav {
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  margin: 0 auto;
+  top:820px;
+  left:50%;
+  margin-left: -140px;
+}
